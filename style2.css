@@ -29,10 +29,14 @@ h2{
     font-weight: 700;
 }
 
-.flex{
+.flex
+{
     display: flex;
 }
 
+.euros{
+    font-weight: 600;
+}
 
 /* Header */
 
@@ -126,12 +130,19 @@ nav li a:hover{
     display: none;
 }
 
+/* Filters */
+
+.textFilter{
+    align-self: center;
+}
+
+
+
 
 /* Footer */
 
-footer
-{
-    background-color: rgb(236, 229, 229);
+footer {
+    background-color: #F2F2F2;
     padding: 20px;
     display: flex;
     justify-content: flex-start;
@@ -142,54 +153,175 @@ footer
     font-family: 'Raleway' Arial, Helvetica, sans-serif;
 }
 
-footer a 
-{
+footer a {
     display: block;
 }
 
-footer>div 
-{
+footer>div {
     /* background-color: blue; */
     width: 33.33%;
 }
 
-footer .footerTitle 
-{
+footer .footerTitle {
     margin-bottom: 10px;
     font-weight: bold;
     list-style-type: none;
 }
 
-footer a
-
-{
-  text-decoration: none;
+footer a {
+    text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     font-weight: 600;
     color: #0065FC;
 }
 
-/* Tablet */
-   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    footer {
-        background-color: rgb(64, 255, 0);
-        flex-direction: column;
+
+@media only screen and (max-width: 1280px){
+
+    .hotels{
+        flex: 1.5;
+    }
+    
+    .hotelsTab{
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        margin: 30px 0;
     }
 
-    footer>div {
-        width: 100%;
+    .activityDescription{
+        font-size: 1rem;
     }
 }
 
-/* Smartphone */
-@media screen and (max-width: 767px) {
-    footer {
-        background-color: rgb(255, 0, 247);
+/* Tablet version */
+@media only screen and (max-width: 1024px){
+
+    /* Search - Tablet */
+    .filters{
         flex-direction: column;
     }
 
-    footer>div {
+    .textFilter{
+        align-self: auto;
+        margin-bottom: 15px;
+    }
+
+    .filter{
+        margin: 0 1rem 1rem 0;
+    }
+
+   
+
+    /* Footer - Tablet */
+
+    footer div{
+        padding: 10px;
+    }
+}
+
+/* Mobile version */
+@media only screen and (max-width: 600px){
+
+    /* General */
+
+    #main{
+        margin: 0;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    /* Header - Mobile */
+
+    header{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-left: 20px;
+    }
+
+    .signUp{
+        align-self: flex-end;
+        padding: 0;
+        margin-right: 20px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    nav{
+        order:3;
+    }
+    
+    nav ul{
         width: 100%;
     }
+
+    nav li{
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    nav li a{
+        padding: inherit;
+    }
+
+    nav li a:hover{
+        border-top: none;
+    }
+
+    nav li:hover{
+        border-bottom-color:#0065FC;
+    }
+
+    /* Search - Mobile */
+
+    .search{
+        margin: 30px 20px;
+    }
+
+    .searchInput{
+        flex: 1;
+    }
+
+    .searchBar{
+        margin: 35px 0 30px;
+    }
+
+    .searchButton{
+        position: relative;
+        width: 50px;
+        border-radius: 15px;
+        left: -20px;
+    }
+
+    .searchButton span{
+        display: none;
+    }
+
+    .searchButton i{
+        display: inline-block;
+    }
+
+    .filters{
+        margin-bottom: 12px;
+    }
+
+    
+
+    /* Footer - Mobile */
+
+    footer{
+        flex-direction: column;
+        padding: 45px 30px;
+    }
+
+    footer div{
+        padding: 0;
+    }
+}
