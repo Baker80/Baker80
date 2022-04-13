@@ -4,67 +4,66 @@
 
 /* General */
 
-body{
+body {
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
-#main{
+#main {
     margin: 0 50px 50px;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-h2{
+h2 {
     font-weight: 700;
 }
 
-.flex
-{
+.flex {
     display: flex;
 }
 
-.euros{
+.euros {
     font-weight: 600;
 }
 
 /* Header */
 
-header{
+header {
     justify-content: space-between;
     margin-bottom: 35px;
 }
 
-.logo{
+.logo {
     margin-top: 30px;
     flex: 1;
 }
 
-nav li{
+nav li {
     padding-top: 40px;
 }
 
-nav a{
+nav a {
     padding: 40px 30px 0;
 }
 
-.signUp{
+.signUp {
     color: #0065FC;
     font-weight: 700;
     padding: 40px 40px 0;
 }
 
-nav li a:hover{
+nav li a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 38px;
@@ -72,36 +71,36 @@ nav li a:hover{
 
 /* Search bar */
 
-.search{
+.search {
     margin-bottom: 30px;
 }
 
-.search h2{
+.search h2 {
     margin-bottom: 10px;
 }
 
-.search p{
+.search p {
     margin-top: 10px;
 }
 
-.searchBar{
+.searchBar {
     margin-bottom: 30px;
     height: 50px;
 }
 
-.containerMarker{
+.containerMarker {
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     width: 50px;
     flex-shrink: 0;
 }
 
-.containerMarker i{
+.containerMarker i {
     margin: auto;
     font-size: 1.2rem;
 }
 
-.searchInput{
+.searchInput {
     border: 1px solid #f2f2f2;
     padding: 0 0 0 15px;
     font-size: 1.1rem;
@@ -109,11 +108,11 @@ nav li a:hover{
     width: 230px;
 }
 
-.searchInput::placeholder{
+.searchInput::placeholder {
     color: #c2c2c2;
 }
 
-.searchButton{
+.searchButton {
     width: 130px;
     background-color: #0065FC;
     border: none;
@@ -126,29 +125,29 @@ nav li a:hover{
     flex-shrink: 0;
 }
 
-.searchButton i{
+.searchButton i {
     display: none;
 }
 
 
 /* Filters */
 
-.textFilter{
+.textFilter {
     align-self: center;
 }
 
-.textFilter{
+.textFilter {
     align-self: center;
 }
 
-.filters{
+.filters {
     flex-wrap: wrap;
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
 
-.filter{
+.filter {
     align-items: center;
     height: 46px;
     border: 2px solid #f2f2f2;
@@ -158,21 +157,21 @@ nav li a:hover{
     border-radius: 25px;
 }
 
-.filter span{
+.filter span {
     padding-left: 12px;
 }
 
-.filter:hover{
+.filter:hover {
     cursor: pointer;
     border-color: #0065FC;
     color: #0065FC;
 }
 
-.filterList{
+.filterList {
     flex-wrap: wrap;
 }
 
-.iconFilter{
+.iconFilter {
     position: relative;
     right: 1px;
     width: 50px;
@@ -181,12 +180,12 @@ nav li a:hover{
     background-color: #DEEBFF;
 }
 
-.iconFilter i{
+.iconFilter i {
     margin: auto;
     color: #0065FC;
 }
 
-.iconInfo{
+.iconInfo {
     height: 20px;
     width: 20px;
     border: 1px solid #f2f2f2;
@@ -194,10 +193,10 @@ nav li a:hover{
     margin-right: 10px;
 }
 
-.iconInfo i{
+.iconInfo i {
     margin: auto;
     font-size: .9rem;
-    color: #0065FC;  
+    color: #0065FC;
 }
 
 /* Hebergements */
@@ -205,21 +204,22 @@ nav li a:hover{
 .hebergement-populaire-container {
     display: flex;
     gap: 20px;
-    
+
 }
 
 .hebergement-populaire-container .hebergement {
     width: 70%;
     flex: 2;
-    
+
 }
 
 .hebergement-populaire-container .populaire {
     width: 30%;
-    
+
 }
 
-.hebergement,.populaire{
+.hebergement,
+.populaire {
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 40px;
@@ -228,18 +228,18 @@ nav li a:hover{
 }
 
 
-.hebergement > h2{
+.hebergement>h2 {
     margin: 0;
 }
 
-.hebergement-Tab{
+.hebergement-Tab {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 30px;
     margin: 30px 0 50px;
 }
 
-.hebergement-Card{
+.hebergement-Card {
     display: grid;
     height: 220px;
     grid-template-rows: 1fr 40%;
@@ -250,41 +250,41 @@ nav li a:hover{
     box-shadow: 0 0 7px #c1c1c1;
 }
 
-.hebergement-Card img{
+.hebergement-Card img {
     width: 100%;
     height: 126px;
     object-fit: cover;
 }
 
-.hebergement-Description{
+.hebergement-Description {
     flex-direction: column;
     justify-content: space-around;
     background-color: #fff;
     padding: 5px 10px;
 }
 
-.hebergement-Description p{
+.hebergement-Description p {
     margin: 0;
 }
 
-.hebergement-Note{
+.hebergement-Note {
     word-spacing: -1ch;
 }
 
-.fa-star{
+.fa-star {
     font-size: .8rem;
     letter-spacing: 2px;
 }
 
-.blueStar{
+.blueStar {
     color: #0065FC;
 }
 
-.greyStar{
+.greyStar {
     color: #f2f2f2;
 }
 
-.voir-plus{
+.voir-plus {
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -292,21 +292,21 @@ nav li a:hover{
 /* Populaire */
 
 
-.populaire-Icon{
+.populaire-Icon {
     justify-content: space-between;
     align-items: baseline;
 }
 
-.populaire-Icon h2{
+.populaire-Icon h2 {
     margin-top: 0;
     margin-bottom: 25px;
 }
 
-.populaire-Icon i{
+.populaire-Icon i {
     font-size: 1.5rem;
 }
 
-.populaire-Card{
+.populaire-Card {
     height: 145px;
     border: 5px solid #fff;
     border-radius: 15px;
@@ -316,13 +316,13 @@ nav li a:hover{
     overflow: hidden;
 }
 
-.populaire-Card img{
+.populaire-Card img {
     width: 40%;
     height: 100%;
     object-fit: cover;
 }
 
-.populaire-Description{
+.populaire-Description {
     flex: 1;
     background-color: #fff;
     flex-direction: column;
@@ -330,15 +330,31 @@ nav li a:hover{
     padding: 10px;
 }
 
-.hebergement-Nom{
+.hebergement-Nom {
     margin: 0;
     font-weight: 700;
     font-size: 1.1rem;
 }
 
-.populaire-Description .hebergement-Nom + p{
+.populaire-Description .hebergement-Nom+p {
     margin-top: 8px;
     margin-bottom: 0;
+}
+
+/* Activitéss */
+
+.activités {
+    margin: 30px 30px;
+}
+
+
+
+.activités-description {
+    align-self: center;
+    background-color: #fff;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 
@@ -354,7 +370,7 @@ footer {
     align-items: baseline;
     width: calc(100% - 40px);
     gap: 20px;
-    font-family: 'Raleway' Arial, Helvetica, sans-serif;
+    font-family: 'Raleway'Arial, Helvetica, sans-serif;
 }
 
 footer a {
@@ -382,114 +398,138 @@ footer a:hover {
 }
 
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1280px) {
 
-    .hebergement{
+    .hebergement {
         flex: 1.5;
     }
-    
-    .hebergement-Tab{
+
+    .hebergement-Tab {
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
         margin: 30px 0;
     }
 
 
 
-/* Tablet version */
+    /* Tablet version */
 
-@media only screen and (max-width: 1024px) {
-    /* Search - Tablet */
-}
-/* Mobile version */
+    @media only screen and (max-width: 1024px) {
+        /* Search - Tablet */
+    }
 
-@media only screen and (max-width: 600px) {
-    .hebergement-populaire-container {
-        flex-direction: column;
-    }
-    .hebergement-populaire-container .hebergement {
-        order: 2;
-        width: 100%;
-    }
-    .hebergement-populaire-container .populaire {
-        order: 1;
-        width: 100%;
-    }
-    body {
-        background-color: rosybrown;
-    }
-    /* General */
-    #main {
-        margin: 0;
-    }
-    h2 {
-        font-size: 1.4rem;
-    }
-    /* Header - Mobile */
-    header {
-        margin: 0;
-        flex-direction: column;
-    }
-    .logo {
-        margin-left: 20px;
-    }
-    .signUp {
-        align-self: flex-end;
-        padding: 0;
-        margin-right: 20px;
-        position: relative;
-        bottom: 30px;
-    }
-    nav {
-        order: 3;
-    }
-    nav ul {
-        width: 100%;
-    }
-    nav li {
-        width: 50%;
-        text-align: center;
-        padding: 20px 0;
-        border-bottom: 3px solid #f2f2f2;
-    }
-    nav li a {
-        padding: inherit;
-    }
-    nav li a:hover {
-        border-top: none;
-    }
-    nav li:hover {
-        border-bottom-color: #0065FC;
-    }
-    /* Search - Mobile */
-    .search {
-        margin: 30px 20px;
-    }
-    .searchInput {
-        flex: 1;
-    }
-    .searchBar {
-        margin: 35px 0 30px;
-    }
-    .searchButton {
-        position: relative;
-        width: 50px;
-        border-radius: 15px;
-        left: -20px;
-    }
-    .searchButton span {
-        display: none;
-    }
-    .searchButton i {
-        display: inline-block;
-    }
-    .filters {
-        margin-bottom: 12px;
-    }
-    /* Footer - Mobile */
-    footer {
-        flex-direction: column;
-        padding: 45px 20px;
-    }
-    footer div {
-        padding: 0;
-    }
+    /* Mobile version */
+
+    @media only screen and (max-width: 600px) {
+        .hebergement-populaire-container {
+            flex-direction: column;
+        }
+
+        .hebergement-populaire-container .hebergement {
+            order: 2;
+            width: 100%;
+        }
+
+        .hebergement-populaire-container .populaire {
+            order: 1;
+            width: 100%;
+        }
+
+        body {
+            background-color: rosybrown;
+        }
+
+        /* General */
+        #main {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        /* Header - Mobile */
+        header {
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        .signUp {
+            align-self: flex-end;
+            padding: 0;
+            margin-right: 20px;
+            position: relative;
+            bottom: 30px;
+        }
+
+        nav {
+            order: 3;
+        }
+
+        nav ul {
+            width: 100%;
+        }
+
+        nav li {
+            width: 50%;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #f2f2f2;
+        }
+
+        nav li a {
+            padding: inherit;
+        }
+
+        nav li a:hover {
+            border-top: none;
+        }
+
+        nav li:hover {
+            border-bottom-color: #0065FC;
+        }
+
+        /* Search - Mobile */
+        .search {
+            margin: 30px 20px;
+        }
+
+        .searchInput {
+            flex: 1;
+        }
+
+        .searchBar {
+            margin: 35px 0 30px;
+        }
+
+        .searchButton {
+            position: relative;
+            width: 50px;
+            border-radius: 15px;
+            left: -20px;
+        }
+
+        .searchButton span {
+            display: none;
+        }
+
+        .searchButton i {
+            display: inline-block;
+        }
+
+        .filters {
+            margin-bottom: 12px;
+        }
+
+        /* Footer - Mobile */
+        footer {
+            flex-direction: column;
+            padding: 45px 20px;
+        }
+
+        footer div {
+            padding: 0;
+        }
