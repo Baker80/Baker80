@@ -574,9 +574,16 @@ footer a:hover {
             /* Activities - Tablet */
 
 
+            section#activites {
+                width: 90vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
 
             .activiteimg {
-                height: 138px;
+                height: 50%;
                 margin-bottom: 10px;
                 width: 400px;
 
@@ -762,7 +769,15 @@ footer a:hover {
         .group-item {
             flex-direction: column;
             padding: 3%;
-            width: 92%;
+            width: fit-content;
+
+        }
+
+        #activites .group-item .item {
+
+            flex-direction: column;
+            width: fit-content;
+
 
         }
 
@@ -770,7 +785,7 @@ footer a:hover {
         #activites .group-item .item img {
             height: 200%;
             max-height: 100px;
-            width: inherit;
+            width: 100%;
             object-fit: cover;
             border-radius: 20px 20px 0 0;
         }
