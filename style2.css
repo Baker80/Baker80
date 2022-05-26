@@ -1,4 +1,6 @@
-* Font perso */ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+/* Font perso */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
 /* General */
 
@@ -44,7 +46,6 @@ header {
 }
 
 .logo {
-    margin-top: 30px;
     flex: 1;
     padding-left: 30px;
 }
@@ -57,9 +58,7 @@ nav a {
     padding: 40px 30px 0;
 }
 
-.signUp {
-    padding: 40px 40px 0;
-}
+.signUp {}
 
 nav li a:hover {
     color: #0065FC;
@@ -199,6 +198,7 @@ nav li a:hover {
 /* Hebergements */
 
 .hebergement-populaire-container {
+    margin: 10px 40px;
     display: flex;
     gap: 20px;
 }
@@ -216,8 +216,9 @@ nav li a:hover {
 .populaire {
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
     flex: 1;
+    margin: 20px 0;
 }
 
 .hebergement>h2 {
@@ -344,16 +345,19 @@ nav li a:hover {
     padding: 0px 0px 0px 20px;
 }
 
+#activites {
+    margin: 20px;
+}
+
 .activiteContainer .fondgris h1 {
     margin-left: 25px;
 }
 
 .activiteContainer .flex-container {
-    list-style: none;
     display: flex;
-    flex-flow: row wrap;
-    padding: 15px 15px;
-    width: calc(100% - 80px);
+    padding: 20px;
+    width: calc(100% - 40px);
+    gap: 40px;
 }
 
 #ActiviteAMarseille {
@@ -396,26 +400,22 @@ nav li a:hover {
 #activites .group-item {
     width: 50%;
     display: flex;
+    gap: 40px;
 }
 
 #activites .group-item .columndouble,
 #activites .group-item .column {
-    max-width: 45%;
-    min-width: 45%;
-    margin: auto;
+    width: 50%;
+    gap: 40px;
 }
 
 #activites .group-item .column,
 #activites .group-item .column .item {
-    height: 100%;
+    /* height: 100%; */
 }
 
-#activites .group-item .column .item .activiteimg,
 #activites .group-item .column .item .activiteimg img {
-    height: 80%;
-    max-height: initial;
-    height: 92%;
-    margin-bottom: -9%;
+    height: 390px;
 }
 
 #activites .group-item .column {
@@ -429,14 +429,12 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     order: 2;
-    flex: 0 1 35%;
 }
 
 #activites .group-item .item {
     width: 100%;
     background: #FFF;
     border-radius: 20px;
-    margin: 0 0 30px 0;
     -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
     box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
@@ -444,16 +442,24 @@ nav li a:hover {
     transition: transform .2s;
 }
 
+.populaire-Tab a article:hover,
+.hebergement-Tab a:hover,
 #activites .group-item .item:hover {
     transform: scale(1.05);
 }
 
 #activites .group-item .item img {
-    height: 100%;
-    max-height: 100px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+}
+
+.activiteimg.activiteimg-medium img {
+    height: 160px;
+}
+
+.activiteimg.activiteimg-small img {
+    height: 130px;
 }
 
 
@@ -461,12 +467,12 @@ nav li a:hover {
 
 footer {
     background-color: #F2F2F2;
-    padding: 30px;
+    padding: 40px;
     display: flex;
     justify-content: flex-start;
     align-content: center;
     align-items: baseline;
-    width: calc(100% - 40px);
+    width: calc(100% - 80px);
     gap: 20px;
     font-family: 'Raleway', Helvetica, sans-serif;
 }
@@ -481,13 +487,15 @@ footer>div {
 }
 
 footer .footerTitle {
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
     list-style-type: none;
 }
 
 footer a {
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 footer a:hover {
@@ -497,59 +505,262 @@ footer a:hover {
 
 
 /* @media only screen and (max-width: 1280px) {
-       
-           .hebergement {
-               flex: 1.5;
-           }
-       
-           .hebergement-Tab {
-               grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-               margin: 30px 0;
-           } */
+
+    .hebergement {
+        flex: 1.5;
+    }
+
+    .hebergement-Tab {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        margin: 30px 0;
+    } */
 
 
 /* Tablet version */
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
-/* @media screen and (min-width: 768px) and (max-width: 1023px) {
-       
-           .filters {
-               flex-direction: column;
-           }
-           .textFilter {
-               align-self: auto;
-               margin-bottom: 15px;
-           }
-           .filter {
-               margin: 0 1rem 1rem 0;
-           }
-           .populaire-Card {
-               height: 180px;
-           }
-           .populaire-Description .hebergement-Nom {
-               font-size: 1.4rem;
-           }
-           .populaire-Description p {
-               font-size: 1.2rem;
-           }
-           .populaire-Description .fa-star {
-               font-size: 1rem;
-           }
-           .hebergement {
-               order: 2;
-           }
-           .hebergement-populaire-container {
-               flex-direction: column;
-           }
-           .activiteimg {
-               height: 138px;
-               margin-bottom: 10px;
-               width: 400px;
-           }
-           footer div {
-               padding: 10px;
-           }
-       } */
+    /* General */
+    body {
+        /* background-color: rosybrown; */
+    }
+
+    #main {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Header - Tablet */
+    header {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .signUp {
+        align-self: flex-end;
+        padding: 0;
+        position: relative;
+        bottom: 30px;
+    }
+
+    nav {
+        order: 3;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav li {
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    nav li a {
+        padding: inherit;
+    }
+
+    nav li a:hover {
+        border-top: none;
+    }
+
+    nav li:hover {
+        border-bottom-color: #0065FC;
+    }
+
+    /* Search - Tablet */
+    .search {
+        margin: 30px 20px;
+        padding: 0;
+    }
+
+    .searchInput {
+        flex: 1;
+    }
+
+    .searchBar {
+        margin: 35px 0 30px;
+    }
+
+    .searchButton {
+        position: relative;
+        width: 50px;
+        border-radius: 15px;
+        left: -20px;
+    }
+
+    .searchButton span {
+        display: none;
+    }
+
+    .searchButton i {
+        display: inline-block;
+    }
+
+    .filters {
+        margin-bottom: 12px;
+    }
+
+    .textFilter {
+        width: 100%;
+    }
+
+    /* Hebergements-Tablet*/
+    .hebergement-populaire-container {
+        flex-direction: column-reverse;
+        margin: 40px 0;
+    }
+
+    .hebergement-populaire-container .hebergement {
+        width: calc(100% - 40px);
+        background: none;
+    }
+
+    .hebergement-populaire-container .populaire {
+        width: calc(100% - 40px);
+    }
+
+    .hebergement-Card {
+        height: 200px;
+    }
+
+    .hebergement-Tab {
+        grid-template: repeat(6, 1fr) / 1fr;
+        gap: 15px;
+    }
+
+    .hebergement-Card img {
+        height: 116px;
+    }
+
+    .hebergement-Description p {
+        font-size: .9rem;
+    }
+
+    .hebergement-Card {
+        display: grid;
+        height: 220px;
+        grid-template-rows: 1fr 40%;
+        box-sizing: border-box;
+        border: 5px solid #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 7px #c1c1c1;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    /* Populaire-Tablet*/
+
+
+    .populaire {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    .populaire-Card {
+        height: 150px;
+        margin-bottom: 10px;
+        border: 5px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 7px #c1c1c1;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .populaire-Icon i {
+        font-size: 1.4rem;
+    }
+
+    .hebergement-Nom {
+        font-size: 1rem !important;
+    }
+
+    .populaire-Description p {
+        font-size: .9rem;
+    }
+
+    .populaire-Description {
+        padding: 15px 10px 10px 20px;
+    }
+
+    .fa-star {
+        font-size: .8rem !important;
+        letter-spacing: 1px;
+    }
+
+    /* Activites - Tablet */
+    .flex-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #activites {
+        margin: 20px 0;
+    }
+
+    #activites .group-item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #activites .group-item .item {
+        width: 80%;
+        background: #FFF;
+        border-radius: 20px;
+        -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+        -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+        box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+        cursor: pointer;
+        transition: transform .2s;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .flex-container,
+    #activites .group-item .columndouble,
+    #activites .group-item .column {
+        width: 100%;
+    }
+
+    .activiteimg.activiteimg-medium img,
+    .activiteimg.activiteimg-small img,
+    #activites .group-item .column .item .activiteimg img {
+        height: 120px
+    }
+
+    #activites .group-item .item img {
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+
+    /* Footer - Tablet */
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        padding: 0;
+        width: 100%;
+    }
+}
 
 
 /* Mobile version */
@@ -558,7 +769,7 @@ footer a:hover {
 
     /* General */
     body {
-        background-color: rosybrown;
+        /* background-color: rosybrown; */
     }
 
     #main {
@@ -577,12 +788,13 @@ footer a:hover {
 
     .logo {
         margin-left: 20px;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
     .signUp {
         align-self: flex-end;
         padding: 0;
-        margin-right: 20px;
         position: relative;
         bottom: 30px;
     }
@@ -617,6 +829,7 @@ footer a:hover {
     /* Search - Mobile */
     .search {
         margin: 30px 20px;
+        padding: 0;
     }
 
     .searchInput {
@@ -653,15 +866,16 @@ footer a:hover {
     /* Hebergements-Mobile*/
     .hebergement-populaire-container {
         flex-direction: column-reverse;
-        padding: 20px;
+        margin: 40px 0;
     }
 
     .hebergement-populaire-container .hebergement {
-        width: calc(100% - 80px);
+        width: calc(100% - 40px);
+        background: none;
     }
 
     .hebergement-populaire-container .populaire {
-        width: calc(100% - 80px);
+        width: calc(100% - 40px);
     }
 
     .hebergement-Card {
@@ -684,8 +898,9 @@ footer a:hover {
     /* Populaire-Mobile*/
     .populaire {
         flex-direction: column;
-        padding: 40px;
+        padding: 20px;
         justify-content: center;
+        border-radius: 0;
     }
 
     .populaire-Card {
@@ -715,22 +930,30 @@ footer a:hover {
     }
 
     /* Activites - Mobile */
-    .group-item {
+    .flex-container {
         flex-direction: column;
-        padding: 3%;
         width: 100%;
     }
 
-    #activites .group-item {
-        width: calc(100% - 80px);
+    #activites {
+        margin: 20px 0;
     }
 
+    #activites .group-item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-container,
     #activites .group-item .columndouble,
     #activites .group-item .column {
+        width: 100%;
+    }
 
-        max-width: 100%;
-        min-width: 100%;
-        margin: auto;
+    .activiteimg.activiteimg-medium img,
+    .activiteimg.activiteimg-small img,
+    #activites .group-item .column .item .activiteimg img {
+        height: 120px
     }
 
     #activites .group-item .item img {
@@ -738,22 +961,13 @@ footer a:hover {
         border-radius: 20px 20px 0 0;
     }
 
-    .activiteContainer .flex-container {
-
-        list-style: none;
-        display: flex;
-        flex-flow: row wrap;
-        padding: 15px 15px;
-        width: 106%;
-    }
-
     /* Footer - Mobile */
     footer {
         flex-direction: column;
-        padding: 45px 20px;
     }
 
     footer div {
         padding: 0;
+        width: 100%;
     }
 }
